@@ -14,8 +14,10 @@
         android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="wrap_content"
@@ -27,33 +29,32 @@
         android:id="@+id/prevBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="1500dp"
         android:background="@android:color/transparent"
         android:text="Back"
         android:textColor="@color/darkblue"
         android:textStyle="bold"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/vPager"
-        app:layout_constraintEnd_toStartOf="@+id/vPager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
 
     <Button
         android:id="@+id/nextBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="820dp"
-        android:layout_marginTop="1500dp"
-        android:layout_marginEnd="70dp"
         android:background="@android:color/transparent"
         android:text="Next"
         android:textColor="@color/darkblue"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/vPager"
-        app:layout_constraintEnd_toStartOf="@+id/vPager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959" />
 
     <LinearLayout
         android:id="@+id/linear"

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Identify"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:text="Identify your color"
+        android:textColor="@color/darkblue"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.051">
+
+        <EditText
+            android:id="@+id/e1"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:hint="R"
+            android:textSize="24dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/whitecolor"
+            android:background="@drawable/e_background"/>
+
+        <EditText
+            android:id="@+id/e2"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:hint="G"
+            android:inputType="numberDecimal"
+            android:textSize="24dp"
+            android:textColor="@color/whitecolor"
+            android:background="@drawable/e_background"/>
+
+        <EditText
+            android:id="@+id/e3"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:hint="B"
+            android:textSize="24dp"
+            android:inputType="numberDecimal"
+            android:textColor="@color/whitecolor"
+            android:background="@drawable/e_background"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/iBtn"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="Identify"
+        android:background="@drawable/btn"
+        android:textColor="@color/whitecolor"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:elevation="30dp"
+        android:fontFamily="@font/abril_fatface"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/didact_gothic"
+        android:text=""
+        android:textColor="@color/darkblue"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iBtn"
+        app:layout_constraintVertical_bias="0.408" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
