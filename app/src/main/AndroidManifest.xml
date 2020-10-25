@@ -13,7 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Identify"></activity>
+        <activity android:name=".DrawerColo"></activity>
+        <activity android:name=".ImgColo" />
+        <activity android:name=".Share" />
+        <activity android:name=".Identify" />
         <activity android:name=".activity_scan_capture" />
         <activity android:name=".scanActivity" />
         <activity android:name=".Homepage" />

@@ -18,4 +18,5 @@
     <color name="orange">#f75414</color>
     <color name="green">#1eeb13</color>
     <color name="lightblue">#065d94</color>
+    <color name="black_overlay">#66000000</color>
 </resources>

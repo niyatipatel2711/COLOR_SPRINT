@@ -5,9 +5,10 @@ import android.util.Log;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Color {
+public class ColorN {
     static int [] yopp = new int[2];
     String tag = "SE";
+    private static final String Tag = "Color";
     static ArrayList<String[]> colorList=new ArrayList<>();
     static{
         colorList.add(new String[] {"Midnight Express", "0", "7", "65"});
@@ -1394,15 +1395,33 @@ public class Color {
         colorList.add(new String[] {"Alabaster", "255", "255", "255"});
         colorList.add(new String[] {"Rock Salt", "255", "255", "255"});
     }
-    public String getColorName(int red,int green,int blue){//To find the closest color name
-        //Log.e(tag, "Entered");
-        /*String name;
-        for(int i=0; i<colorList.size(); i++){
-            String[] recent = colorList.get(i);
-            for(int j=0; j<recent.length; j++){
 
+    public String[] getColorName(int red,int green,int blue){ //To find the closest color name
+        int r,g,b,max=255,min=0;
+        String[] name=null;
+        for(String[] color:colorList){
+            r=Integer.parseInt(color[1]);
+            g=Integer.parseInt(color[2]);
+            b=Integer.parseInt(color[3]);
+            min=((red-r)*(red-r)+(green-g)*(green-g)+(blue-b)*(blue-b))/3;
+            if(max>min){
+                max=min;
+                name=color;
             }
-        }*/
-        return null;
+        }
+        return  name;
+    }
+
+    public String getColor(String red,String green,String blue){//To find the closest color name
+        //Log.d(Tag, "Hello:");
+        String[] array;
+        String color = null;
+        for (int i=0; i<colorList.size(); i++){
+            array = colorList.get(i);
+            if (array[1].equals(red) && array[2].equals(green) && array[3].equals(blue)){
+                color = array[0];
+            }
+        }
+        return color;
     }
 }

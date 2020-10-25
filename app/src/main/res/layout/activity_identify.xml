@@ -11,7 +11,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/abhaya_libre_semibold"
+        android:fontFamily="@font/abril_fatface"
         android:text="Identify your color"
         android:textColor="@color/darkblue"
         android:textSize="32dp"
@@ -77,37 +77,48 @@
     <Button
         android:id="@+id/iBtn"
         android:layout_width="300dp"
-        android:layout_height="70dp"
-        android:text="Identify"
+        android:layout_height="60dp"
         android:background="@drawable/btn"
-        android:textColor="@color/whitecolor"
-        android:textAllCaps="false"
-        android:textStyle="bold"
-        android:textSize="24dp"
         android:elevation="30dp"
-        android:fontFamily="@font/abril_fatface"
+        android:fontFamily="@font/abhaya_libre_semibold"
+        android:text="Identify"
+        android:textAllCaps="false"
+        android:textColor="@color/whitecolor"
+        android:textSize="24dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.187" />
+        app:layout_constraintVertical_bias="0.168" />
 
     <TextView
         android:id="@+id/color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
         android:fontFamily="@font/didact_gothic"
         android:text=""
         android:textColor="@color/darkblue"
-        android:textSize="24dp"
+        android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iBtn"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintTop_toBottomOf="@+id/View"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/View"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iBtn" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

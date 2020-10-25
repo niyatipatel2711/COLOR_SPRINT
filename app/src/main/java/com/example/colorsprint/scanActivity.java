@@ -130,4 +130,13 @@ public class scanActivity extends AppCompatActivity {
         Intent i = new Intent(this, Identify.class);
         startActivity(i);
     }
+
+    public void share(View view) {
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(Intent.EXTRA_SUBJECT, "COLOR SPRINT");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, "Share this application");
+        startActivity(Intent.createChooser(shareIntent, "Choose anyone:"));
+
+    }
 }
